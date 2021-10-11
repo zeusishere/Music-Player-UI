@@ -1,0 +1,1411 @@
+/* Droid Sans Regular
+
+font-family: droid-sans, sans-serif;
+
+font-weight: 400;
+
+font-style: normal;
+
+
+Droid Sans Bold
+
+font-family: droid-sans, sans-serif;
+
+font-weight: 700;
+
+font-style: normal; */
+
+@keyframes background_Animation {
+   
+    0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+    
+}
+:root,* {
+    --backgroundColor:linear-gradient(135deg, rgba(62,81,81,1) 015%, rgba(222,203,164,1) 60%);;
+    --textColor:white ;
+    --backgroundColorstation: #595a4e ;
+    margin:0px;
+    padding:0px;
+    font-family: droid-sans,  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+
+}
+body {
+    background-color: var(--backgroundColor);
+    
+    margin:0px;
+    margin-top:200px ;
+    background-image:var(--backgroundColor);
+    background-size: 200% 200%;
+    animation: background_Animation 1s ease-in-out ;
+    
+}
+
+a
+{
+    display: block;
+    text-decoration: none;
+}
+/* comman for all devices */
+.text {
+    color :var(--textColor) ;
+    text-align:center;
+    font-family: droid-sans,  sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: capitalize;
+    
+}
+
+.text-left{
+    text-align: left;
+}
+#latest-songs-language1 h1 , #latest-songs-language2 h1
+    {
+        margin-bottom:20px; 
+    }
+    
+/*
+moved inside mobile 
+ .flexClass
+{
+    display: flex;
+    
+    overflow-x: auto;
+    
+}
+.flexClass::-webkit-scrollbar
+{
+    width:0 ;
+    height:0px;
+} */
+
+.align-center
+{
+    align-items: center;
+}
+.align-baseline
+{
+    align-items: baseline;
+}
+.section-padding
+{
+    padding: 0px 8px;
+}
+.containerHOVER:hover img
+{
+   opacity: 0.6;
+}
+.icon 
+    {
+        width: 150px;
+        height:150px ;
+        border-radius: 50%;
+    }
+    .icon-square
+    {
+        width: 150px;
+        height:150px ;
+       
+    }
+    /* station */
+    #stations
+    {
+        
+        background-color:var(--backgroundColorstation);
+       
+        
+    }
+    /* .station img  */
+    .smallicon
+    {
+        width: 120px;
+        height:120px ;
+        border-radius: 50%;
+    }
+    .text-absolute-centered
+    {
+        position :absolute ;
+        top:50% ;
+        left:50% ; 
+        /* transform: translateY(-50%); */
+        transform: translate(-50%,-50%);
+    }
+   
+    .container-relative
+    {
+        position:relative ;
+    }
+    /* curated playlists */
+    .playlist-container
+    {
+        /* max-width:350px; */
+        width:100%;
+        height:175px ; 
+        /* look ar the effect after removing this */
+        /* min-width: 320px; 
+        max-width:350px ; */
+        /* 200px is for images need to have more for margin */
+        background-color: cadetblue;
+        overflow: hidden;
+        position: relative; /* this is very important for zoom effect to work*/
+        margin:0px 4px ;
+        
+        
+    }
+    .img-holder
+    {
+        width:100%;
+        height:100% ;
+        transition: .2s ease-in-out ;
+      
+       
+    }
+   
+
+    .img-holder:hover
+    {
+        transform: scale(1.4,1.4);
+    }
+    
+    #playlist1
+    {
+        background: url("icon/party.jpg");
+        background-size: cover;
+    }
+    #playlist2
+    {
+        background: url("icon/electronic.jpg");
+        background-size: cover;
+    }
+    #playlist3
+    {
+        background: url("icon/roadtrip1.jpg");
+        background-size: cover;
+    }
+    /* carousel */
+     
+   #main-carousel
+   {
+       display:flex ;
+       flex-wrap: wrap;
+       
+       /* overflow-x: hidden;  */
+        /* remove this for effect to be visible again */
+    }
+    .carousel-container
+    {
+        display:flex;
+        min-width:150px;
+    
+    }
+    .banner
+    {
+       position: relative;
+       margin-left: 4px;
+       margin-right: 4px;
+       margin-top:8px ;
+       margin-bottom:8px;
+       
+        
+    }
+    .main-banner
+    {
+        position:absolute ;
+        top:0px;
+    }
+    .background-holder
+    { 
+    width:90px;
+    height: 90px;
+    transition:all .2s ease-in-out ;
+    }
+    
+   
+    .banner:hover 
+    {
+        z-index:100;
+        transform: scale(1.1,1.1)  ;
+       
+    }
+    .banner:hover .background-holder
+    {
+        transform: scale(1.015,1.2)  ;
+       
+        filter: blur(2px);
+    }
+    .carousel-container p
+    {
+        margin-top:20px;
+    }
+  
+    .carousel-container p span 
+
+    {
+       
+           font-size: 8px;
+           color:#C5C6D0 ;
+       
+    }
+   
+    /* aside section */
+  
+  
+ #music-bar
+ {
+    position:fixed; 
+    bottom:0px;
+    left:0px ;
+    min-height:50px ;
+    width:100%;
+    background-color:  #0F2027;
+    /* background-image: linear-gradient(to bottom, #0f2027, #203a43, #2c5364); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+  */
+    display:flex ;
+    justify-content: space-around;
+    align-items: baseline;
+    padding-top: 10px;
+    z-index:1000;
+}
+#controls
+{
+    width:70% ;
+    
+    
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+}
+ .player-control
+ {
+     width:30px ;
+     height:30px;
+ }
+ .player-control img
+ {
+     width:100%;
+     height:auto;
+ }
+ .visible
+{
+    display: none;
+}
+
+
+ #music-queue
+ {
+    width:100vw;
+    min-height: 250px;
+    margin:0px;
+    padding:0px;
+    background-image:linear-gradient(0deg, #0F2027 0%, rgba(62,81,81,1) 45%);
+    /* linear-gradient(135deg, rgba(62,81,81,1) 0%, rgba(222,203,164,1) 100%); */
+    position: fixed;
+    bottom:-300px;
+    left: 0px;
+    opacity:0 ;
+    transition : all 1s ease-in-out ;
+    z-index:1 ;
+    
+ }
+ #qu
+ {
+     margin-left:20px;
+     margin-top:10px ;
+     margin-bottom: 10px;
+     font-size:  25px;
+     color: var(--textColor);
+     
+ }
+ #music-queue ul
+ {
+     display: inline-block;
+ }
+ #music-queue ul li
+ {
+     list-style: none;
+     margin-left:20px;
+     margin-bottom : 10px;
+     display:flex ;
+ }
+ #music-queue #song-details
+ {
+    margin-left:20px;
+    /* margin-top:4px; */
+ }
+ #music-queue ul li::after
+ {
+    content:'' ;
+    display: inline-block;
+    width:15px;
+    height:15px ;
+    background-image: url("like.png");
+    background-size: cover;
+    margin-left:100px;
+    
+ }
+ #music-queue #song
+ {
+    color: var(--textColor);
+    font-size: 14px;
+    text-transform: capitalize;
+ }
+ #music-queue #artist
+ {
+    font-size: 12px;
+    color:#C5C6D0 ;
+}
+ 
+ #current-song
+ {
+     width:25px;
+     height:25px ;
+     position: relative;
+     /* top:-10px; */
+ }
+ #current-song marquee
+ {
+    width:40px;
+ }
+
+ #current-song img{
+     width:100% ;
+     height :auto ;
+     box-shadow: 0px 0px 5px #fff;
+ }
+ #state
+ {
+     display:none;
+ }
+ 
+#state:checked ~ #music-queue
+{
+    bottom:60px;
+    opacity:1 ;
+}
+#progress-elements
+{
+    width:60%;
+  
+    position: fixed;
+    bottom:09px;
+    left:25%;
+    display: flex;
+    justify-content: baseline;
+  
+}
+   
+#progress-bar
+{
+    width:80%;
+    margin-left:4px;
+    margin-right:4px;
+    height:2px ;
+    background-color:#595a4e;
+    position: relative;
+    top: 10px;
+    /* position: fixed;
+    bottom:14px;
+    left:25%; */
+}
+#played-progress
+{
+    width:50%;
+    height: 100%;
+    background-color:chartreuse;
+}
+#progressindicator
+{
+    width:10px;
+    height:10px ;
+    border: 2px solid white;
+    background-color: chartreuse;
+    border-radius: 50%;
+    position: absolute;
+    left: 48% ;
+    top:-6px;
+}
+/* #current
+    { */
+        /* position: absolute;
+        left:-5%;
+        bottom:; */
+        
+    /* } */
+
+   
+    
+    /*image slider  */
+    section#slider
+    {
+        width:100%;
+        max-width: 1000px;
+        overflow: hidden;
+    }
+    section#slider #image-strip
+    {
+        width:600%;
+        position: relative ;
+        margin: 0;
+	    padding: 0;
+        /* font size is used to remove default sapce between text/inline replaced elements */
+        font-size: 0 ;
+        animation: slidy 15s infinite;
+    }
+    section#slider #image-strip img
+    {
+        
+        width:calc(100%/6.0) ;
+        height:auto ;
+    }
+    @keyframes slidy 
+    {
+        0%
+        {
+            left :0% ;
+        }
+        10%
+        {
+            left :0% ;
+        }
+        
+        020%
+        {
+            left :-100% ;
+        }
+        030%
+        {
+            left :-100% ;
+        }
+        40%
+        {
+            left :-200% ;
+        }
+        50%
+        {
+            left :-200% ;
+        }
+        60%
+        {
+            left :-300% ;
+        }
+        70%
+        {
+            left :-300% ;
+        }
+        80%
+        {
+            left :-400% ;
+        }
+        90%
+        {
+            left :-400% ;
+        }
+        100%
+        {
+            left :-500% ;
+        }
+
+    }
+    /* image slider end */
+
+
+
+    /* navigation */
+    /* navigation */
+nav#top-nav-bar
+{
+    position:relative ;
+    height:50px ;
+    /* top:10px ; */
+    /* width:100%; */
+    display: flex ;
+    
+
+}
+#player-logo
+{
+    display:flex ;
+}
+#logo
+{
+    width:25px ;
+}
+#logo  #logo-photo
+{
+    width:100% ;
+    height:auto;
+}
+#player-logo #name
+{
+    font-family: droid-sans, sans-serif;
+    font-size: 8px;;
+    font-weight: 700;
+    
+    font-style: normal;
+    color: white ;
+    align-self: center;
+}
+
+#profile
+{
+    
+    margin-left: auto;
+    margin-right: 2px;
+    display: flex;
+    position: relative;
+   
+}
+#photo
+{
+    width:30px ;
+}
+#photo img
+{
+    width: 100% ;
+    border-radius: 50%;
+    height: auto;
+}
+/* search */
+::placeholder
+{
+    color:rgba(255, 255, 255, 0.453) ;
+    font-family: droid-sans, sans-serif; ;
+}
+#search-icon  
+{
+    width:20px;
+    margin-top:4px ;
+    margin-right: 10px;
+}
+#notification
+{
+    width:15px;
+    margin-top:4px ;
+    margin-right: 10px;
+}
+/* search Bar */
+#search-bar 
+{
+    margin-top:4px;
+    margin-right:8px;
+    /* overflow-x: hidden; */
+   
+
+}
+#search-bar input
+{
+    width :0px;
+    background: none;
+    border: none ;
+    
+    padding-left: 6px;
+    /* display: none; */
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+#search-bar input:focus, textarea:focus, select:focus{
+    outline: none;
+    border-bottom: solid 2px black;
+}
+
+#toggle-search:checked ~ input
+{
+    opacity:1;
+    width: 120px;
+    border-bottom: solid 1px black;
+    display: inline-block;
+}
+/* for mobile devices only */
+@media screen and (max-width:500px) 
+{
+    .flexClass
+{
+    display: flex;
+    
+    overflow-x: auto;
+    
+}
+.flexClass::-webkit-scrollbar
+{
+    width:0 ;
+    height:0px;
+}
+   
+    body
+    {
+        /* --backgroundColor :#40A6DE ; */
+        background-image:var(--backgroundColor);
+        margin:5px 10px 60px 10px;
+    }
+    /* .section-padding
+    {
+        padding: 0px 2px;
+    } */
+    
+    section
+    {
+        margin-top:10px;
+        margin-bottom: 10px;
+    }
+    aside section
+    {
+        margin-top:0px;
+        margin-bottom:0px;
+      
+    }
+    /* Popular artists */
+   
+/* making a same class below will need to get rid of it post completion */
+    .artist 
+    {
+        min-width:70px ;
+        min-height:70px ;
+        /* padding: 0px  2px ; */
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .icon  
+    {
+      width:100% ;
+      height:auto ;
+     
+    }
+    .text
+    {
+        font-size: 12px;
+    }
+    .text-large
+    {
+    font-size: 20px;
+    }
+    /* stations */
+   
+    #stations
+    {
+        
+        
+        align-items:center ;
+        /* border:solid red 2px ; */
+        
+    }
+    .station
+    {
+        min-width : 60px ;
+        min-height : 60px ;
+        margin : 0px 4px ;
+      /* do not remove below as it keeps padding equal above and below */
+        padding: 4px 0px 0px 0px ; 
+        
+    }
+    
+    .smallicon
+    {
+        width: 100%;
+        height:auto ;
+      
+    }
+    /* curated playlists */
+
+
+
+    /* latest songs albums */
+    /* properties same as artists except border radius */
+    .language1-songs-container
+    {
+        width:60px ;
+        height:auto ;
+        margin : 0px 4px ;
+    }
+    .icon-square
+    {
+      width:100% ;
+      height:auto ;  
+    }
+    .album-info
+    {
+        margin-top:3px;
+        margin-bottom: 10px;
+    }
+  
+    .album-info  span 
+
+    {
+       
+           font-size: 8px;
+           color:#c7c7c7 ;
+       
+    }
+    /* main carousel */
+   
+   #main-carousel
+   {
+       display:flex ;
+      
+       overflow-x: hidden; 
+        /* remove this for effect to be visible again 
+        also if overflow is not set to hidden it also creates a problem with fixed positioned music bar*/
+    }
+    .banner
+    {
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+    .banner:hover 
+    {
+        z-index:100;
+        transform: scale(1.1,1.1)  ;
+       
+    }
+    .banner:hover .background-holder
+    {
+        transform: scale(1.015,1.1)  ;
+       
+        filter: blur(2px);
+    }
+    .carousel-container p
+    {
+        margin-top:20px;
+    }
+  
+    .carousel-container p span 
+
+    {
+       
+           font-size: 8px;
+           color:#C5C6D0 ;
+       
+    }
+  
+  
+}
+
+@media screen and (min-width:500px)  and (max-width:999px)
+{
+    body 
+    {
+        padding-bottom: 80px;
+        margin-top: 20px;
+    }
+    .heading
+    {
+        margin:30px 50px;
+    }
+   
+    .flexClass
+{
+    display: flex;
+    
+    overflow-x: auto;
+    
+}
+.flexClass::-webkit-scrollbar
+{
+    width:0 ;
+    height:0px;
+}
+    section
+    {
+        margin-top:30px;
+        margin-bottom: 30px;
+        margin-left :50px ;
+        margin-right:50px ;
+    }
+    aside section
+    {
+        margin-top:0px;
+        margin-bottom:0px;
+        margin-left :0px ;
+        margin-right:0px ;
+    }
+   
+    /* popular artists */
+    .artist 
+    {
+        min-width:100px ;
+        min-height:100px ;
+        /* padding: 0px  2px ; */
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .icon  
+    {
+      width:100% ;
+      height:auto ;
+     
+    }
+    .text
+    {
+        font-size: 16px;
+    }
+    .text-large
+    {
+    font-size: 20px;
+    }
+     /* stations */
+   
+     #stations
+     {
+         
+         
+         align-items:center ;
+        
+         
+     }
+     .station
+     {
+         min-width:90px ;
+         width :100px ;
+         max-width:120px;
+         
+         margin-left: 8px;
+         margin-right: 8px;
+       /* do not remove below as it keeps padding equal above and below */
+         padding: 4px 0px 0px 0px ; 
+         
+     }
+     
+     .smallicon
+     {
+         width: 100%;
+         height:auto ;
+       
+     }
+      /* curated playlists */
+    .playlist-container
+    {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    /* latest songs albums */
+    /* properties same as artists except border radius */
+    
+    .language1-songs-container
+    {
+        width:90px ;
+        height:auto ;
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    .icon-square
+    {
+      width:100% ;
+      height:auto ;  
+    }
+
+    .album-info
+    {
+        margin-top:3px;
+        margin-bottom: 10px;
+    }
+  
+    .album-info  span 
+
+    {
+       
+           font-size: 12px;
+           color:#c7c7c7 ;
+       
+    }
+    /* main carousel */
+    .banner
+    {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+    section#slider
+    {
+        /* margin-left :50px ; */
+        width:calc(100%  - 100px);
+        margin-left: auto;
+        margin-right:auto ;
+       
+        max-width: 1000px;
+        overflow: hidden;
+    }
+    .carousel-container p span 
+
+    {
+       
+           font-size: 12px;
+           
+    }
+
+    /* music queue */
+    #music-bar
+ {
+     height:70px;
+ }
+  
+   #music-queue #song-details
+   {
+      
+      margin-top:4px;
+   }
+  #state:checked ~ #music-queue
+  {
+      bottom:79px;
+     
+      opacity:1 ;
+  }
+  #current-song
+ {
+     width:40px;
+     height:40px ;
+     position: relative;
+     top:5px;
+ }
+ #current-song marquee
+ {
+    width:80px;
+ } 
+
+ /* visible section */
+ .visible
+{
+    display: block;
+}
+/* nav section */
+nav
+{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo
+{
+    width:60px ;
+}
+#photo
+{
+    width:50px ;
+
+}
+#search-icon
+{
+    width:30px;
+    margin-top:10px ;
+    margin-right: 20px;
+}
+#search-icon  
+{
+    width:25px;
+    margin-top:10px ;
+    margin-right: 10px;
+}
+#notification
+{
+    width:20px;
+    margin-top:10px ;
+    margin-right: 10px;
+}
+#search-bar 
+{
+    margin-top:10px;
+    margin-right:20px;
+    
+    overflow-x: hidden;
+   
+
+}
+#toggle-search:checked ~ input
+{
+    opacity:1;
+    width: 180px;
+    border-bottom: solid 1px black;
+    display: inline-block;
+}
+#player-logo #name
+{
+    font-size: 16px;
+}
+
+
+
+}
+   
+    @media screen and (min-width:1000px) 
+{
+    body
+    {
+        /* --backgroundColor :#9fb7c4 ; */
+        background-image:var(--backgroundColor);
+        margin:40px 100px 0px 100px;
+        padding-bottom: 80px;
+    }
+    body .outer-container main
+    {
+        width:66%;
+    }
+
+    /* body .outer-container main
+    {
+        width:100%;
+    } */
+
+
+    section
+    {
+        margin-top:40px;
+        margin-bottom: 40px;
+    }
+    aside section
+    {
+        margin-top:0px;
+        margin-bottom:0px;
+    }
+     /* popular artists */
+     .artist 
+     {
+         min-width:110px ;
+         max-width:120px;
+         min-height:110px ;
+         /* padding: 0px  2px ; */
+         margin-left: 8px;
+         margin-right: 8px;
+     }
+     .icon  
+     {
+       width:100% ;
+       height:auto ;
+      
+     }
+     .text
+     {
+         font-size: 16px;
+     }
+     .text-large
+     {
+     font-size: 20px;
+     }
+     /* stations */
+   
+    #stations
+    {
+        
+        padding-top:6px ;
+        padding-bottom: 6px;
+        align-items:center ;
+       
+        
+    }
+    .station
+    {
+        min-width : 100px ;
+        max-width:105px;
+        min-height : 100px ;
+        margin : 0px 4px ;
+      /* do not remove below as it keeps padding equal above and below */
+        padding: 4px 6px 0px 6px ; 
+        
+    }
+    
+    .smallicon
+    {
+        width: 100%;
+        height:auto ;
+      
+    }
+    /* to remove horizontal scroll we have below two classes */
+    .flexClass
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-even;
+}
+/* curated playlists */
+.curated-playlists .flexclass
+{
+    
+    flex-wrap: nowrap;
+    
+}
+.playlist-container
+{
+    width:calc(100%/3.2);
+}
+.img-holder
+{
+    width:100%;
+   
+    transition: .2s ease-in-out ;
+  
+   
+}
+/* latest songs albums */
+/* properties same as artists except border radius */
+.language1-songs-container
+{
+    width:110px ;
+    height:auto ;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+.icon-square
+{
+  width:100% ;
+  height:auto ;  
+}
+    .album-info
+    {
+        margin-top:3px;
+        margin-bottom: 15px;
+    }
+  
+    .album-info  span 
+
+    {
+       
+           font-size: 12px;
+           color:#e4e0e0 ;
+       
+    }
+    /* main carousel */
+   
+   #main-carousel
+   {
+       display:flex ;
+       flex-wrap: wrap;
+      
+       overflow: visible; 
+        /* remove this for effect to be visible again 
+        also if overflow is not set to hidden it also creates a problem with fixed positioned music bar*/
+    }
+    .banner
+    {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 4px;
+        margin-bottom:4px; 
+    }
+    .banner:hover 
+    {
+        z-index:100;
+        transform: scale(1.1,1.1)  ;
+       
+    }
+    .banner:hover .background-holder
+    {
+        transform: scale(1.015,1.1)  ;
+       
+        filter: blur(2px);
+    }
+    .carousel-container p span 
+
+    {
+       
+           font-size: 12px;
+           
+    }
+
+
+    
+
+
+
+
+
+
+
+    /* slider */
+    section#slider
+    {
+        /* margin-left :50px ; */
+        width:calc(100%);
+        margin-left: auto;
+        margin-right:auto ;
+       
+        max-width: 1000px;
+        overflow: hidden;
+    }
+     
+      /* music queue */
+    #music-bar
+    {
+        height:
+        70px;
+    }
+      /* music queue */
+      #music-queue #song-details
+      {
+         
+         margin-top:8px;
+      }
+  #state:checked ~ #music-queue
+  {
+      bottom:0px;
+     
+      opacity:1 ;
+  }
+  #current-song
+ {
+     width:40px;
+     height:40px ;
+     position: relative;
+     top:5px;
+ }
+ #current-song marquee
+ {
+    width:80px;
+ }
+   
+
+/* }
+@media screen and (min-width:1000px) 
+{ */
+    body .outer-container main
+    {
+        width:66%;
+        padding-bottom: 80px;
+    }
+    .flexClass
+    {
+        justify-content: space-even;
+    }
+    .artist 
+    {
+        min-width:110px ;
+        max-width:115px;
+        min-height:110px ;
+        /* padding: 0px  2px ; */
+        margin-left: 6px;
+        margin-right: 5px;
+    }
+     /* music queue */
+  #state:checked ~ #music-queue
+  {
+      /* look at it */
+      bottom:80px;
+     
+      opacity:1 ;
+  }
+  #current-song
+ {
+     width:40px;
+     height:40px ;
+     position: relative;
+     top:5px;
+ }
+ #current-song marquee
+ {
+    width:80px;
+ }
+ #music-queue
+ {
+    width:30vw;
+    transition: opacity .5s ease-in-out ;
+    margin:0px;
+    padding:0px;
+    background-image:none ;
+    /* background-image:linear-gradient(0deg, #0F2027 0%, rgba(62,81,81,1) 45%); */
+    /* linear-gradient(135deg, rgba(62,81,81,1) 0%, rgba(222,203,164,1) 100%); */
+    position: fixed;
+    top:100px;
+    left:68%;
+    opacity:1;
+    z-index :10;
+    overflow-y: auto;
+   
+ }
+ #music-queue::-webkit-scrollbar
+ {
+    width:0px;
+ }
+ #qu
+ {
+     font-weight: 600;
+ }
+ #music-queue ul li::after
+ {
+    
+    width:20px;
+    height:20px ;
+   
+    
+ }
+ #music-queue #song 
+ {
+    
+    font-size: 16px;
+   
+ }
+ #music-queue #artist
+ {
+    font-size: 14px;
+    
+}
+#state:checked ~ #music-queue
+{
+    
+    opacity:0 ;
+}
+/* visible controls */
+.visible
+{
+    display: block;
+}
+/* nav section */
+nav
+{
+    width:95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo
+{
+    width:60px ;
+}
+#photo
+{
+    width:50px ;
+
+}
+#search-icon
+{
+    width:30px;
+    margin-top:10px ;
+    margin-right: 20px;
+}
+#notification
+{
+    width:25px;
+    margin-top:10px ;
+    margin-right: 10px;
+}
+#search-bar 
+{
+    margin-top:10px;
+    margin-right:20px;
+    
+    overflow-x: hidden;
+   
+
+}
+
+#toggle-search:checked ~ input
+{
+    opacity:1;
+    width: 250px;
+    border-bottom: solid 1px black;
+    display: inline-block;
+}
+#player-logo #name
+{
+    font-size: 16px;
+}
+
+
+}
+    
+    
+
+    
